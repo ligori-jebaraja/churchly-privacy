@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Churchly Church Management App - Official Documentation"
+    />
+    <title>Churchly - Official Documentation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 3px solid #007bff;
+      }
+
+      .logo {
+        font-size: 3em;
+        margin-bottom: 10px;
+      }
+
+      .app-title {
+        font-size: 2.5em;
+        color: #2c3e50;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .subtitle {
+        color: #6c757d;
+        font-size: 1.2em;
+      }
+
+      .nav-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin: 30px 0;
+      }
+
+      .nav-card {
+        background: #f8f9fa;
+        padding: 25px;
+        border-radius: 10px;
+        border-left: 4px solid #007bff;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .nav-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 20px rgba(0, 123, 255, 0.3);
+      }
+
+      .nav-card.csae {
+        border-left-color: #dc3545;
+      }
+
+      .nav-card.privacy {
+        border-left-color: #28a745;
+      }
+
+      .nav-card.support {
+        border-left-color: #ffc107;
+      }
+
+      .card-icon {
+        font-size: 2em;
+        margin-bottom: 10px;
+      }
+
+      .card-title {
+        font-size: 1.3em;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #2c3e50;
+      }
+
+      .card-description {
+        color: #6c757d;
+        font-size: 0.95em;
+      }
+
+      .features {
+        margin: 40px 0;
+      }
+
+      .features h2 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+        font-size: 1.8em;
+      }
+
+      .feature-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        list-style: none;
+      }
+
+      .feature-list li {
+        background: #e3f2fd;
+        padding: 15px;
+        border-radius: 8px;
+        border-left: 3px solid #2196f3;
+      }
+
+      .contact-section {
+        background: #f1f8e9;
+        padding: 25px;
+        border-radius: 10px;
+        margin: 30px 0;
+        border: 1px solid #8bc34a;
+      }
+
+      .contact-section h2 {
+        color: #558b2f;
+        margin-bottom: 15px;
+      }
+
+      .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+      }
+
+      .footer {
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 2px solid #dee2e6;
+        text-align: center;
+        color: #6c757d;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 20px;
+          margin: 10px;
+        }
+
+        .app-title {
+          font-size: 2em;
+        }
+
+        .nav-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">⛪</div>
+        <h1 class="app-title">Churchly</h1>
+        <p class="subtitle">Church Management App - Official Documentation</p>
+      </div>
+
+      <div class="nav-grid">
+        <a href="csae-policy.html" class="nav-card csae">
+          <div class="card-icon">🛡️</div>
+          <div class="card-title">Child Safety Policy (CSAE)</div>
+          <div class="card-description">
+            Comprehensive Child Sexual Abuse and Exploitation prevention policy
+            outlining our commitment to child safety and protection measures.
+          </div>
+        </a>
+
+        <a href="privacy-policy.html" class="nav-card privacy">
+          <div class="card-icon">🔒</div>
+          <div class="card-title">Privacy Policy</div>
+          <div class="card-description">
+            Details on how we collect, use, and protect user data in compliance
+            with international privacy regulations.
+          </div>
+        </a>
+
+        <a href="mailto:support@churchmanagement.com" class="nav-card support">
+          <div class="card-icon">💬</div>
+          <div class="card-title">Support & Contact</div>
+          <div class="card-description">
+            Get help with your questions, report issues, or contact our support
+            team for assistance.
+          </div>
+        </a>
+      </div>
+
+      <div class="features">
+        <h2>🌟 About Churchly</h2>
+        <p style="margin-bottom: 20px">
+          Churchly is designed to help church communities manage their
+          operations efficiently and securely, with a strong focus on data
+          protection and user safety.
+        </p>
+
+        <ul class="feature-list">
+          <li>👥 Member Management & Directory</li>
+          <li>📅 Event Planning & Calendar</li>
+          <li>💰 Financial Tracking & Tithing</li>
+          <li>💬 Communication Tools</li>
+          <li>📄 Secure Document Storage</li>
+          <li>🔐 Role-based Access Control</li>
+          <li>📱 Mobile-First Design</li>
+          <li>🛡️ Advanced Security Features</li>
+        </ul>
+      </div>
+
+      <div class="contact-section">
+        <h2>📞 Support & Safety</h2>
+        <div class="contact-grid">
+          <div>
+            <strong>General Support:</strong><br />
+            📧 support@churchmanagement.com
+          </div>
+          <div>
+            <strong>Safety Concerns:</strong><br />
+            🚨 safety@churchmanagement.com
+          </div>
+          <div>
+            <strong>CSAE Reports:</strong><br />
+            🛡️ csae-response@churchmanagement.com
+          </div>
+          <div>
+            <strong>Emergency Line:</strong><br />
+            📞 +1-800-SAFE-CHURCH
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>
+          <strong>Churchly</strong> - Empowering faith communities through
+          technology
+        </p>
+        <p>
+          <strong>Last Updated:</strong> October 25, 2025 |
+          <strong>Version:</strong> 1.0.0
+        </p>
+        <p style="margin-top: 15px">
+          <small
+            >© 2025 Churchly. All rights reserved. Licensed software for church
+            management.</small
+          >
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // Add click tracking for policy links
+      document.addEventListener("DOMContentLoaded", function () {
+        const policyLinks = document.querySelectorAll(".nav-card");
+        policyLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            console.log(
+              "Policy accessed: " +
+                this.querySelector(".card-title").textContent
+            );
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
